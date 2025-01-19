@@ -37,7 +37,7 @@ const ProjectSummary: React.FC<ProjectSummaryProps> = ({
                     fill
                     className="object-cover rounded"
                 />
-                <div className="absolute inset-0 bg-black opacity-80"></div>
+                <div className="absolute inset-0 dark:bg-black bg-white opacity-80"></div>
                 <div className="relative z-10 p-2">
                     <h2 className="text-lg font-bold">{title}</h2>
                     <p className="text-sm">{dateWorked}</p>

@@ -58,7 +58,7 @@ export function ProjectList() {
             <ProjectSummary
             key={project.title}
             {...project}
-            className='border-2 border-white rounded'
+            className='border-2 dark:border-white border-black rounded'
             />
             ))}
         </div>

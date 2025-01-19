@@ -12,7 +12,7 @@ export default function page() {
     return (
         <div className="flex flex-col items-center w-full min-w-[200px]">
 
-            <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-5 flex-col py-4">
+            <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-4 flex-col py-2">
                 <Header />
 
                 <Image src={HeroImage} className="h-[200px] w-full object-cover" alt="picture of sunset" />
@@ -23,14 +23,15 @@ export default function page() {
 
 
                     <div className="w-full border-2 border-gray-800 rounded p-2">
-                        <div className="p-2">
-                            <p>You have reached my blog.</p>
+                        <div className="">
+                            <p className="font-bold">You have reached my blog.</p>
                             <p>I hope to post here more in the future.</p>
                         </div>
                     </div>
 
-                    <div className="w-full border-2 border-gray-800 rounded p-4 flex flex-col gap-4" >
-                        <h1>Writings:</h1>
+                    <div className="w-full border-2 border-gray-800 rounded p-2" >
+                        <h1 className="font-bold pb-2">Writings:</h1>
+                        <div className="flex flex-col gap-4">
                         {posts.map((post, index) => (
                             <div key={index} className="p-2 border rounded">
                                 <a href={`/blog/${post.url}`}>
@@ -45,6 +46,7 @@ export default function page() {
                                 {/* <p dangerouslySetInnerHTML={{ __html: post.post }} /> */}
                             </div>
                         ))}
+                        </div>
                     </div>
 
 
