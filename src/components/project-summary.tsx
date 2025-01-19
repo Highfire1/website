@@ -37,8 +37,7 @@ const ProjectSummary: React.FC<ProjectSummaryProps> = ({
                     fill
                     className="object-cover rounded"
                 />
-                <div className="absolute inset-0 dark:bg-black bg-white opacity-80"></div>
-                <div className="relative z-10 p-2">
+                <div className="w-full h-full relative z-10 p-2 hover:opacity-0  dark:bg-black bg-white dark:opacity-90 opacity:90  transition-opacity duration-500">
                     <h2 className="text-lg font-bold">{title}</h2>
                     <p className="text-sm">{dateWorked}</p>
                     <p className="text-sm pt-2" dangerouslySetInnerHTML={{ __html: description }}></p>
