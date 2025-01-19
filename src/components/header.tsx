@@ -12,12 +12,12 @@ const Header = () => {
                 </div>
 
                 <div className="flex sm:gap-6 gap-2 justify-end grow max-[99px]:w-full">
-                    {/* <Link href="/" className="text-gray-500 hover:text-gray-900">
+                    <Link href="/" className="text-gray-500 hover:text-gray-900">
                         Home
-                    </Link> */}
-                    {/* <Link href="/projects" className="text-gray-500 hover:text-gray-900">
-                        Projects
-                    </Link> */}
+                    </Link>
+                    <Link href="/blog" className="text-gray-500 hover:text-gray-900">
+                        Blog
+                    </Link>
                     {/* <Link href="/contact" className="text-gray-500 hover:text-gray-900">
                         Contact
                     </Link> */}
