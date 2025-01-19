@@ -28,8 +28,8 @@ export function ProjectList() {
         },
         {
             imageUrl: '/projects/vshacks.png',
-            imageAlt: 'VSHacks Website Screenshot',
-            title: 'VSHacks',
+            imageAlt: 'vsHacks Website Screenshot',
+            title: 'vsHacks',
             description: "Lead organizer of Vancouver Students Hackathon, a virtual hackathon for high school students across Greater Vancouver.",
             // dateWorked: '2022 - 2025',
             url: 'https://vshacks.github.io/',
