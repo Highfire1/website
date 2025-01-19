@@ -48,8 +48,8 @@ export default function Home() {
 
             <div className="border-2 border-gray-800 rounded p-2">
               <h3 className="font-bold">Quick Facts:</h3>
-                <p>📍: Vancouver, Canada</p>
-                <p>🏫: Studying Data Science @ Simon Fraser University</p>
+                <p>📍Vancouver, Canada</p>
+                <p>🏫Studying Data Science @ Simon Fraser Univ.</p>
             </div>
 
             <div className="border-2 border-gray-800 rounded p-2">
@@ -59,6 +59,15 @@ export default function Home() {
                 <li>Vocaloid</li>
                 <li>Clouds</li>
                 <li>(some) gacha games</li>
+              </ul>
+            </div>
+
+            <div className="border-2 border-gray-800 rounded p-2">
+              <h3 className="font-bold">Stack:</h3>
+              <ul className="list-disc pl-5">
+                <li>Preferred: Python, Next.js, Tailwind</li>
+                <li>Proficient: Java, C++, Bash, PHP, SQL, QGIS</li>
+                <li>Want to learn: Rust</li>
               </ul>
             </div>
 
