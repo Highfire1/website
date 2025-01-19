@@ -32,12 +32,6 @@ export const posts: BlogPost[] = [
   width: 100%;
 }
 
-body {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
 h1 {
   font-weight: bold;
   font-size: revert;
@@ -86,13 +80,7 @@ This can be fixed by checking for usernames in the message and replacing it with
   margin-right: auto;
   width: 100%;
 }
-
-body {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-}
-
+  
 h1 {
   font-weight: bold;
   font-size: 48px;
@@ -139,9 +127,6 @@ p {
 }
 
 body {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
     animation: fadeIn 2s forwards;
 }
 
@@ -170,9 +155,37 @@ p {
     line-height: 1.6;
     font-size: 16px;
 }
+    
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 16/9;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+blockquote {
+margin: 20px 0;
+padding: 15px 30px;
+border-left: 5px solid #ccc;
+font-style: italic;
+}
 </style>
 
-<p><img src="https://cdn.theatlantic.com/thumbor/9u_U6cK9HRmMwt9HiUkKreaqNYg=/459x64:3018x1503/1600x900/media/img/mt/2017/08/RTX1JPC8/original.jpg" class="center" alt="plane conducting cloud seeding"></p>
+<div className="image-container">
+    <img 
+        src="https://cdn.theatlantic.com/thumbor/9u_U6cK9HRmMwt9HiUkKreaqNYg=/459x64:3018x1503/1600x900/media/img/mt/2017/08/RTX1JPC8/original.jpg"
+        className="center"
+        alt="plane conducting cloud seeding"
+    />
+</div>
+<i style="padding-bottom: 10px">(Chaiwat Subprasom / Reuters)</i>
+
 <h3 id="a-local-perspective">A Local Perspective</h3>
 <p>In 2001, BC Hydro commissioned a study on cloud seeding. The exact contents of this study are a mystery, so we can only speculate towards their contents. However, two years later the provincial Weather Modification Act was repealed. The implications are unclear, but they are certainly intriguing. <a class="src" href="https://lailayuile.com/2011/07/28/why-did-the-bc-government-repeal-the-weather-modification-act/">[1]</a></p>
 <h3 id="a-tantalizing-option">A Tantalizing Option</h3>
@@ -191,6 +204,7 @@ p {
 <p>In Maharashtra, India, the government hired a cloud seeding company (aside: this is the very same company that BC Hydro hired) only after three consecutive years of drought slashed agricultural output by 33%. <a class="src" href="https://www.bloomberg.com/features/2015-cloud-seeding-india/">[14]</a></p>
 <blockquote>
 <p>The human impact has been severe—1,300 debt-trapped farmers have committed suicide in Maharashtra in just the past six months.</p>
+<p> - <a href="https://www.bloomberg.com/features/2015-cloud-seeding-india/">Bloomberg </a></p>
 </blockquote>
 <p>Globally, cleantech startups raised <strong>16 billion dollars</strong> in the first half of 2021 alone. <a class="src" href="https://www.bloomberg.com/news/articles/2021-09-02/climate-startups-are-booming-as-vcs-throw-money-at-cleantech">[15]</a></p>
 <p>As we approach 2 degrees, the stability of our climate will only continue degrading. Cloud seeding is a solution to only the symptoms of climate change. Without greater changes in society, cloud seeding may prove ultimately useless.</p>`
