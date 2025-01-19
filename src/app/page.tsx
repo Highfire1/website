@@ -37,7 +37,7 @@ export default function Home() {
           <div className="w-[200px] hidden sm:flex flex-col gap-4">
 
             <div className="border-2 border-gray-800 rounded p-2">
-              <h3 className="font-bold">Links</h3>
+              <h3 className="font-bold">Links:</h3>
               <ul className="list-disc pl-5">
                 <li><a className="hover:underline" href="https://www.linkedin.com/in/andersontseng/">LinkedIn</a></li>
                 <li><a className="hover:underline" href="https://www.instagram.com/anderson_wootdidoo/">Instagram</a></li>
