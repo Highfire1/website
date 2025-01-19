@@ -3,12 +3,21 @@ import Footer from "@/components/footer";
 import { posts } from "@/app/blog/posts";
 import Link from "next/link";
 
-interface BlogPageProps {
-    params: { slug: string };
+export async function generateStaticParams() {
+    return posts.map((post) => ({
+        slug: post.url,
+    }));
 }
 
-export default function BlogPage({ params }: BlogPageProps) {
-    const post = posts.find((p) => p.url === params.slug);
+
+export default async function Page({
+    params,
+  }: {
+    params: Promise<{ slug: string }>
+  }) {
+    const slug = (await params).slug
+    const post = posts.find((p) => p.url === slug);
+    
     if (!post) {
         return <div className="p-10">
             Post not found. Go back to <Link href="/blog">all blog posts</Link>?
