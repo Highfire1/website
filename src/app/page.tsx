@@ -49,7 +49,7 @@ export default function Home() {
             <div className="border-2 border-gray-800 rounded p-2">
               <h3 className="font-bold">Quick Facts:</h3>
                 <p>📍: Vancouver, Canada</p>
-                <p>🏫: SFU</p>
+                <p>🏫: Studying Data Science @ Simon Fraser University</p>
             </div>
 
             <div className="border-2 border-gray-800 rounded p-2">
@@ -58,7 +58,7 @@ export default function Home() {
                 <li>D&D</li>
                 <li>Vocaloid</li>
                 <li>Clouds</li>
-                <li>Gacha Games</li>
+                <li>(some) gacha games</li>
               </ul>
             </div>
 
