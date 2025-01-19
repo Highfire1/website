@@ -5,6 +5,9 @@ import { ProjectList } from "@/components/project-list";
 import Header from "../components/header"
 import Footer from "@/components/footer";
 
+import HeroImage from '@/../public/sunrise.jpg'
+import Image from "next/image";
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center w-full min-w-[200px]">
@@ -12,9 +15,7 @@ export default function Home() {
       <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-5 flex-col py-4">
         <Header />
 
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className="h-[200px] w-full object-cover" src="/sunrise.jpg" alt="picture of sunrise" />
-
+        <Image src={HeroImage} className="h-[200px] w-full object-cover" alt="picture of sunrise" priority />
 
 
         <div className="flex gap-8 w-full">
