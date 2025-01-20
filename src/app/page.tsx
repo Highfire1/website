@@ -18,7 +18,7 @@ export default function Home() {
         <Image src={HeroImage} className="h-[200px] w-full object-cover" alt="picture of sunrise" priority />
 
 
-        <div className="flex gap-8 w-full">
+        <div className="flex gap-4 w-full">
 
           <div className="flex-1 flex gap-4 flex-col w-full">
 
