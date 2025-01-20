@@ -30,13 +30,6 @@ export default async function Page({
             <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-5 flex-col py-4">
                 <Header />
 
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                {/* <img
-                    className="h-[200px] w-full object-cover"
-                    src="/sunrise.jpg"
-                    alt="Blog post image"
-                /> */}
-
                 <div className="w-full">
                     <h1 className="text-2xl font-bold">{post.title}</h1>
                     <p className="p-0 m-0">Published on {new Date(post.published).toLocaleDateString("en-US", {
