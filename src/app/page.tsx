@@ -50,6 +50,7 @@ export default function Home() {
               <h3 className="font-bold">Quick Facts:</h3>
                 <p>📍Vancouver, Canada</p>
                 <p>🏫Studying Data Science @ Simon Fraser Univ.</p>
+                <p>🖥️Windows 11 {"<"}3</p>
             </div>
 
             <div className="border-2 border-gray-800 rounded p-2">
