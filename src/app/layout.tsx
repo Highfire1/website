@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Lato } from "next/font/google";
 import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
+import { Analytics } from "@vercel/analytics/next"
+import { GoogleAnalytics } from '@next/third-parties/google'
+
 import "./globals.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import CanvasBackground from "@/components/background";
@@ -48,6 +51,8 @@ export default function RootLayout({
           defaultTheme="system"
         >
           {children}
+          <Analytics />
+          <GoogleAnalytics gaId="G-PFW116ELQN " />
         </NextThemesProvider>
 
       </body>
