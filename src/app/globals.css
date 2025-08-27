@@ -3,36 +3,36 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
-  --color-card: hsl(207 97% 12%);
-  --color-background-light: hsl(0 0% 100%);
-  --color-background-dark: hsl(0, 0%, 5%);
-  --color-background-pastel: #cfb7e0;
+  /* --color-card: hsl(207 97% 12%); */
+  --color-light-theme: hsl(0 0% 100%);
+  --color-dark-theme: hsl(0, 0%, 0%);
+  --color-pastel-theme: #cfb7e0;
 }
 
-@layer base {
+/* @layer base {
   [data-theme="light"] {
     --color-card: hsl(207 97% 12%);
   }
   [data-theme="dark"] {
-    --color-card: hsl(0 0% 96%);
+    --color-card: hsl(0 0% 100%);
   }
   [data-theme="pastel"] {
     --color-card: hsl(291 46% 83%);
   }
-}
+} */
 
 :root[data-theme="light"] {
-  background-color: var(--color-background-light);
-  color: var(--color-background-dark);
+  background-color: var(--color-light-theme);
+  color: var(--color-dark-theme);
 }
 
 :root[data-theme="dark"] {
-  background-color: var(--color-background-dark);
-  color: var(--color-background-light);
+  background-color: var(--color-dark-theme);
+  color: var(--color-light-theme);
 }
 
 :root[data-theme="pastel"] {
-  background-color: var(--color-background-pastel);
+  background-color: var(--color-pastel-theme);
 }
 
 /* this is so that we have transition when changing theme, but not on page load */
