@@ -9,9 +9,9 @@ const nextConfig: NextConfig = {
   // disabled because:
   // a) i dislike the optimized links that next.js generates
   // b) it doesn't work with github pages
-  // images: {
-  //   unoptimized: true,
-  // },
+  images: {
+    unoptimized: true,
+  },
 
   // GNU Terry Pratchett
   async headers() {
