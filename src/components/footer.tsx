@@ -13,6 +13,7 @@ const Footer = () => {
                 <Link href="https://github.com/highfire1" className="p-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">Github</Link>
                 
                 <Link href="https://devpost.com/Highfire1" className="p-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">Devpost</Link>
+                <Link href="/socials" className="p-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">More!</Link>
             </div>
 
             {/* <p>(c) 2022-2025 Anderson Tseng.</p> */}
