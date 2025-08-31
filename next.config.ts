@@ -12,6 +12,22 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+
+  // GNU Terry Pratchett
+  async headers() {
+    return [
+      {
+        // match all routes
+        source: '/:path*',
+        headers: [
+          {
+            key: 'X-Clacks-Overhead',
+            value: 'GNU Terry Pratchett',
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
