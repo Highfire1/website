@@ -4,7 +4,8 @@ import Image from "next/image";
 import Header from "@/components/header"
 import Footer from "@/components/footer";
 
-import Interact from "./interact";
+// import Photos from "./photos";
+import Interact from "./about";
 
 
 export default function page() {

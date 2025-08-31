@@ -25,7 +25,7 @@ const pages: VNPage[] = [
     {
         title: "Who is Anderson Tseng?",
         image: "/about/anderson_2.jpg",
-        text: " I am a data science student at Simon Fraser University. I'm passionate about making the world a better place by using the power of technology.",
+        text: "I am a data science student at Simon Fraser University. I'm passionate about making the world a better place by using the power of technology.<br/><br/>I'm interested in event management and have been involved in the organization of several hackathons as well as a local anime festival.<br/><br/>I also built the Langara Course Planner, a tool that hundreds of students have used to plan their courses at Langara College.<br/><br/>Outside of those things, I enjoy photography, singing, and exploring the Lower Mainland.",
         buttonText1: "That's it?"
     },
     {
@@ -166,13 +166,11 @@ const Interact = () => {
                 <div className="w-full border-2 border-gray-800 rounded p-2">
                     <div className="">
                         <p className="font-bold">{page.title}</p>
-                        {page.text.split('\n').map((line, i) => (
-                            <p key={i}>{line}</p>
-                        ))}
+                        <div dangerouslySetInnerHTML={{ __html: page.text }} />
                         {page.buttonText1 && (
                             <button 
                                 onClick={handleNextPage}
-                                className="px-4 py-2 mt-4 text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors duration-200 min-w-60"
+                                className="px-4 py-2 mt-4 text-white bg-purple-600 rounded-md hover:bg-purple-700 transition-colors duration-200 min-w-60 hidden"
                             >
                                 {page.buttonText1}
                             </button>
