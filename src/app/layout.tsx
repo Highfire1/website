@@ -51,7 +51,7 @@ export default function RootLayout({
           // disableTransitionOnChange
           defaultTheme="system"
         >
-          <PlausibleProvider domain="andersontseng.ca" customDomain="https://plausible.andersontseng.ca">
+          <PlausibleProvider domain="andersontseng.ca" customDomain="https://a.andersontseng.ca" selfHosted>
             {children}
           </PlausibleProvider>
           <Analytics />
