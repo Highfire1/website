@@ -4,6 +4,7 @@ import { ThemeProvider as NextThemesProvider } from 'next-themes'
 
 import { Analytics } from "@vercel/analytics/next"
 import { GoogleAnalytics } from '@next/third-parties/google'
+import PlausibleProvider from 'next-plausible'
 
 import "./globals.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -50,7 +51,9 @@ export default function RootLayout({
           // disableTransitionOnChange
           defaultTheme="system"
         >
-          {children}
+          <PlausibleProvider domain="andersontseng.ca" customDomain="plausible.andersontseng.ca">
+            {children}
+          </PlausibleProvider>
           <Analytics />
           <GoogleAnalytics gaId="G-PFW116ELQN " />
         </NextThemesProvider>
