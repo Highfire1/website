@@ -104,6 +104,7 @@ export default function PageHero({ src, alt }: PageHeroProps) {
         frame.style.left = `${initialRect.left}px`;
         frame.style.width = `${initialRect.width}px`;
         frame.style.height = `${initialRect.height}px`;
+        frame.getBoundingClientRect();
 
         requestAnimationFrame(() => {
             frame.style.top = `${expandedRect.top}px`;
@@ -187,6 +188,7 @@ export default function PageHero({ src, alt }: PageHeroProps) {
                         fill
                         className="object-cover transition-[filter] duration-500 group-hover:brightness-100 group-focus-visible:brightness-100"
                         alt={alt}
+                        sizes="92vw"
                         preload
                         onLoad={(event) => {
                             setHeroDimensions({
