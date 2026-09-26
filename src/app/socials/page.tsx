@@ -1,10 +1,11 @@
 "use client"
 
 import React, { useMemo, useState } from "react";
-import Image from "next/image";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { SiGithub, SiLinkedin, SiInstagram, SiDevpost, SiBluesky, SiLastdotfm, SiTumblr, SiChessdotcom, SiX, SiArchiveofourown, SiReddit, SiYoutube, SiTwitch, SiSpotify } from 'react-icons/si';
+import PageHero from "@/components/page-hero";
+import { SiGithub, SiInstagram, SiDevpost, SiBluesky, SiLastdotfm, SiTumblr, SiChessdotcom, SiX, SiArchiveofourown, SiReddit, SiYoutube, SiTwitch, SiSpotify } from 'react-icons/si';
+import { FaLinkedin } from 'react-icons/fa';
 
 type Social = { id: string; name: string; href?: string; logo?: string; hidden?: boolean };
 
@@ -21,8 +22,8 @@ const SOCIALS: Social[] = [
     { id: "bluesky", name: "Bluesky", href: "https://bsky.app/profile/highfire1.bsky.social", hidden: true },
     { id: "lastfm", name: "Last.fm", href: "https://www.last.fm/user/highfire1", hidden: true },
     { id: "tumblr", name: "No. XD", hidden: true },
-    { id: "chesscom", name: "Chess.com", hidden: true, href: "https://www.chess.com/member/highfire1"},
-    { id: "archiveofourown", name: "I know what you are.", hidden: true},
+    { id: "chesscom", name: "Chess.com", hidden: true, href: "https://www.chess.com/member/highfire1" },
+    { id: "archiveofourown", name: "I know what you are.", hidden: true },
     { id: "x", name: "Twitter", href: "https://x.com/highfire13", hidden: true },
     { id: "youtube", name: "YouTube", hidden: true },
     { id: "twitch", name: "Twitch", hidden: true },
@@ -32,7 +33,7 @@ const SOCIALS: Social[] = [
 // Map each social id to a react-icons component
 const ICONS: Record<string, React.ComponentType<{ size?: number; className?: string }>> = {
     github: SiGithub,
-    linkedin: SiLinkedin,
+    linkedin: FaLinkedin,
     instagram: SiInstagram,
     devpost: SiDevpost,
     bluesky: SiBluesky,
@@ -69,13 +70,11 @@ export default function Page() {
     }, [query]);
 
     return (
-        <div className="flex flex-col items-center w-full min-w-[200px]">
-            <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-4 flex-col py-2">
+        <div className="flex flex-col items-center w-full min-w-50">
+            <div className="xl:w-300 lg:w-250 md:w-3xl w-full px-4 flex gap-4 flex-col py-2">
                 <Header />
 
-                <div className="relative h-52 w-full">
-                    <Image src="/clouds/purple.webp" fill={true} className="object-cover rounded-sm" alt="picture of sunset" priority />
-                </div>
+                <PageHero src="/clouds/purple.webp" alt="picture of sunset" />
 
                 <section className="py-6">
                     <h2 className="text-xl font-semibold mb-3">Socials</h2>

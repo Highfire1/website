@@ -9,7 +9,7 @@ const Header = () => {
 
                 <div className="@container justify-start col-start-1 w-full  align-middle">
                     {/* Container queries are so freaking cool */}
-                    <Link href="/" className="block py-2 p w-fit font-bold text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    <Link href="/" className="block py-2 p w-fit font-bold dark:hover:text-gray-400 hover:text-gray-900">
                         <span className="block @min-[8ch]:hidden w-fit">AT</span>
                         <span className="hidden @min-[8ch]:block @min-[10ch]:hidden w-fit">Anderson</span>
                         <span className="hidden @min-[10ch]:block @min-[13ch]:hidden w-fit">Anderson T</span>
@@ -18,16 +18,16 @@ const Header = () => {
                 </div>
 
                 <div className="justify-self-end gap-2 sm:gap-4 flex justify-end items-center font-bold align-middle">
-                    <Link href="/about" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    <Link href="/about" className="py-2 dark:hover:text-gray-400 hover:text-gray-900" prefetch={true}>
                         About
                     </Link>
-                    {/* <Link href="/gallery" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    {/* <Link href="/gallery" className="py-2dark:hover:text-gray-200 hover:text-gray-900">
                         Gallery
                     </Link> */}
-                    <Link href="/blog" className="py-2 text-gray-500 dark:hover:text-gray-200 hover:text-gray-900">
+                    <Link href="/blog" className="py-2 dark:hover:text-gray-400 hover:text-gray-900" prefetch={true}>
                         Blog
                     </Link>
-                    <ChangeThemeButton/>
+                    <ChangeThemeButton />
                 </div>
 
             </nav>

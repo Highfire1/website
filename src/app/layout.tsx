@@ -6,6 +6,7 @@ import { Analytics } from "@vercel/analytics/next"
 import { GoogleAnalytics } from '@next/third-parties/google'
 import PlausibleProvider from 'next-plausible'
 
+// @ts-ignore -- Next.js processes this global stylesheet at build time.
 import "./globals.css";
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 import CanvasBackground from "@/components/background";

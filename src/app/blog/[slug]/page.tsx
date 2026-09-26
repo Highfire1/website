@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import PageHero from "@/components/page-hero";
 import { posts } from "@/app/blog/posts";
 import Link from "next/link";
 
@@ -26,9 +27,11 @@ export default async function Page({
     }
 
     return (
-        <div className="flex flex-col items-center w-full min-w-[200px]">
-            <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full px-4 flex gap-5 flex-col py-4">
+        <div className="flex flex-col items-center w-full min-w-50">
+            <div className="xl:w-300 lg:w-250 md:w-3xl w-full px-4 flex gap-5 flex-col py-4">
                 <Header />
+
+                <PageHero src="/clouds/sunset.webp" alt="picture of sunset" />
 
                 <div className="w-full">
                     <Link href="/blog" className="text-gray-500 hover:text-gray-700">← Back to all posts</Link>

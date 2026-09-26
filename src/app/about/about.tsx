@@ -6,7 +6,7 @@ export default function Interact() {
         <article className="flex flex-col">
             
             <header>
-                <h1 className="text-2xl font-bold pb-2">Who is Anderson Tseng?</h1>
+                <h1 className="text-xl font-bold pb-2">Who is Anderson Tseng?</h1>
             </header>
 
             <div className="flex flex-col md:flex-row gap-6 items-start">

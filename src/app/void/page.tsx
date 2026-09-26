@@ -6,12 +6,12 @@ import Header from "@/components/header"
 
 export default function page() {
     return (
-        <div className="flex flex-col items-center w-full min-w-[200px]">
+        <div className="flex flex-col items-center w-full min-w-50">
 
-            <div className="xl:w-[1200px] lg:w-[1000px] md:w-[768px] w-full min-h-screen px-4 flex gap-4 flex-col justify-between py-2">
+            <div className="xl:w-300 lg:w-250 md:w-3xl w-full min-h-screen px-4 flex gap-4 flex-col justify-between py-2">
                 <Header />
                 
-                <div className="flex-grow"></div>
+                <div className="grow"></div>
 
                 {/* <Footer /> */}
             </div>

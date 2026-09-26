@@ -4,8 +4,12 @@
 
 @theme {
   /* --color-card: hsl(207 97% 12%); */
-  --color-light-theme: hsl(0 0% 100%);
-  --color-dark-theme: hsl(0, 0%, 0%);
+  --color-light-theme: hsl(0 0% 0%);
+  --bg-color-light-theme: hsl(0 0% 100%);
+
+  --color-dark-theme: white;
+  --bg-color-dark-theme: #010409; /* #0D1117 */
+
   --color-pastel-theme: #cfb7e0;
 }
 
@@ -22,13 +26,13 @@
 } */
 
 :root[data-theme="light"] {
-  background-color: var(--color-light-theme);
-  color: var(--color-dark-theme);
+  background-color: var(--bg-color-light-theme);
+  color: var(--color-light-theme);
 }
 
 :root[data-theme="dark"] {
-  background-color: var(--color-dark-theme);
-  color: var(--color-light-theme);
+  background-color: var(--bg-color-dark-theme);
+  color: var(--color-dark-theme);
 }
 
 :root[data-theme="pastel"] {
@@ -38,4 +42,18 @@
 /* this is so that we have transition when changing theme, but not on page load */
 .theme-transition {
   transition: background-color 1s, color 1s;
+}
+
+::view-transition-group(.morph) {
+  animation-duration: 650ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(.morph),
+  ::view-transition-old(.morph),
+  ::view-transition-new(.morph) {
+    animation-duration: 0s !important;
+    animation-delay: 0s !important;
+  }
 }
