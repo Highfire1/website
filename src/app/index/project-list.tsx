@@ -8,7 +8,7 @@ export function ProjectList() {
             title: 'Langara College Course Planner',
             description: 'A web app that helps students plan their courses at Langara College.',
             // dateWorked: '2022 - 2025',
-            url: 'https://planner.langaracs.ca',
+            url: 'https://langaracourses.ca',
             stack: ['Python', 'FastAPI', 'Next.js', 'Tailwind'],
         },
         {

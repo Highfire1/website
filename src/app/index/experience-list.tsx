@@ -21,7 +21,7 @@ export function ExperienceList() {
             title: 'Langara Computer Science Club',
             description: "Revived and presided over the LCSC, hosting 50+ events and two in-person hackathons.",
             dateWorked: 'Fall 2022 - Fall 2024',
-            url: 'https://langaracs.ca/',
+            url: 'https://www.instagram.com/langaracpsc',
         },
         {
             imageUrl: '/projects/vshacks.png',
